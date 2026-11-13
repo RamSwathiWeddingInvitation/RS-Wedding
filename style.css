@@ -274,3 +274,9 @@ h1, h2, h3, h4 {
         display: none;
     }
 }
+/* Extra celebration effect when envelope opens */
+
+body.is-celebrating .petal {
+    animation-duration: 5s !important;
+    opacity: 0.9;
+}
