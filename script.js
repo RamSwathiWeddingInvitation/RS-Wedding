@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Start playback on the same gesture that opens the envelope.
     startMusic();
     envelopeScreen.classList.add("is-opening");
+    document.body.classList.add("is-celebrating");
     document.body.classList.remove("locked");
     window.setTimeout(() => {
       envelopeScreen.hidden = true;
@@ -136,4 +137,29 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", paintLayer);
   }
   document.body.classList.add("locked");
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const shower = document.getElementById("petal-shower");
+
+    if (!shower) return;
+
+    const numberOfPetals = window.innerWidth < 600 ? 13 : 22;
+
+    for (let i = 0; i < numberOfPetals; i++) {
+        const petal = document.createElement("span");
+
+        const types = ["rose", "rose", "jasmine", "gold"];
+        const type = types[Math.floor(Math.random() * types.length)];
+
+        petal.classList.add("petal", type);
+
+        petal.style.setProperty("--left", Math.random() * 100 + "%");
+        petal.style.setProperty("--size", (6 + Math.random() * 10) + "px");
+        petal.style.setProperty("--duration", (9 + Math.random() * 9) + "s");
+        petal.style.setProperty("--delay", (-Math.random() * 15) + "s");
+        petal.style.setProperty("--drift", (-70 + Math.random() * 140) + "px");
+        petal.style.setProperty("--opacity", (0.4 + Math.random() * 0.5));
+
+        shower.appendChild(petal);
+    }
 });
