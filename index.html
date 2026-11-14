@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,37 +7,47 @@
   <meta name="theme-color" content="#55191f">
   <title>Ramprasath &amp; Swathi | Wedding Invitation</title>
   <meta name="description" content="Together with the blessings of our families, we invite you to celebrate the wedding of Ramprasath and Swathi.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="petal-shower" id="petal-shower" aria-hidden="true"></div>
+
   <audio id="weddingMusic" loop preload="auto">
     <source src="assets/Anbil-Avan.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Stage 1: sealed envelope -->
+  <!-- Stage 1: Sealed envelope -->
   <section class="envelope-screen" id="envelopeScreen" aria-label="Open the wedding invitation">
     <div class="envelope-intro">
       <p class="tiny-gold">YOU'RE INVITED TO THE WEDDING OF</p>
       <h1>Ramprasath <span>&amp;</span> Swathi</h1>
+
       <button class="envelope" id="openInvitation" aria-label="Tap the wax seal to open the invitation">
         <span class="envelope-flap"></span>
         <span class="envelope-pocket"></span>
         <span class="wax-seal">R<span>&amp;</span>S</span>
       </button>
+
       <p class="tap-hint">T A P&nbsp; T O&nbsp; O P E N</p>
     </div>
   </section>
 
-  <!-- Stage 2: burgundy title reveal -->
+  <!-- Stage 2: Burgundy title reveal -->
   <section class="cover-screen" id="coverScreen" aria-label="Ramprasath and Swathi">
     <div class="cover-frame">
-      <span class="corner c1"></span><span class="corner c2"></span>
-      <span class="corner c3"></span><span class="corner c4"></span>
+      <span class="corner c1"></span>
+      <span class="corner c2"></span>
+      <span class="corner c3"></span>
+      <span class="corner c4"></span>
+
       <div class="gold-dust" aria-hidden="true"></div>
+
       <div class="cover-content">
         <span class="heart">♥</span>
         <p class="cover-kicker">We're getting married</p>
@@ -44,58 +55,79 @@
         <span class="ampersand">&amp;</span>
         <h2>Swathi</h2>
       </div>
+
       <a class="cover-down" href="#invitation" aria-label="Continue to invitation">⌄<br>⌄</a>
     </div>
   </section>
 
   <main id="invitation">
+
+    <!-- Main invitation -->
     <header class="hero" id="home">
       <div class="hero-flower flower-left" aria-hidden="true">✿</div>
       <div class="hero-flower flower-right" aria-hidden="true">❀</div>
+
       <div class="ornament">✧　❋　✧</div>
+
       <p class="eyebrow">TOGETHER WITH THE BLESSINGS OF OUR FAMILIES</p>
       <p class="intro">With hearts full of joy,</p>
       <p class="intro">we invite you to celebrate the wedding of</p>
+
       <h1>Ramprasath <span>&amp;</span> Swathi</h1>
+
       <p class="tagline">TWO HEARTS · ONE JOURNEY · FOREVER</p>
+
       <div class="hero-divider"><span>❋</span></div>
+
       <p class="date-line">SUNDAY <b>13</b> DECEMBER 2026</p>
       <p class="place-line">Harvey Kumarasamy Kalyana Mandapam · Tirupur</p>
-      <a class="scroll-link" href="#date-reveal">DISCOVER OUR WEDDING DATE <span>↓</span></a>
+
+      <a class="scroll-link" href="#date-reveal">
+        DISCOVER OUR WEDDING DATE <span>↓</span>
+      </a>
     </header>
 
-    <!-- Stage 3: scratch-to-reveal using the supplied background artwork -->
+    <!-- Stage 3: Scratch-to-reveal wedding date -->
     <section class="scratch-section" id="date-reveal">
       <div class="scratch-art" aria-label="Scratch to reveal wedding date">
+
         <div class="scratch-reveal">
           <span>OUR WEDDING DAY</span>
           <strong>13<sup>th</sup></strong>
           <b>DECEMBER 2026</b>
           <small>Sunday · 7:00 AM – 8:30 AM</small>
         </div>
+
         <canvas id="scratchCanvas" aria-label="Scratch the gold card to reveal the wedding date"></canvas>
       </div>
+
       <p class="scratch-tip">Scratch the golden card to unveil our wedding date ✨</p>
     </section>
 
+    <!-- Countdown -->
     <section class="countdown-section">
       <p class="eyebrow">THE COUNTDOWN BEGINS</p>
+
       <div class="countdown" aria-label="Countdown to the wedding">
         <div><strong id="days">--</strong><span>DAYS</span></div>
         <div><strong id="hours">--</strong><span>HOURS</span></div>
         <div><strong id="minutes">--</strong><span>MINUTES</span></div>
         <div><strong id="seconds">--</strong><span>SECONDS</span></div>
       </div>
+
       <p class="small-note">Until we begin our forever.</p>
     </section>
 
+    <!-- Wedding celebrations -->
     <section class="section" id="celebrations">
       <div class="section-heading">
         <p class="eyebrow">SAVE THE DATES</p>
         <h2>Our Wedding Celebrations</h2>
         <p>Three occasions, one beautiful celebration. We would be delighted to have you with us.</p>
       </div>
+
       <div class="event-grid">
+
         <article class="event-card">
           <div class="event-number">01</div>
           <p class="event-kicker">SATURDAY · 12 DECEMBER 2026</p>
@@ -105,6 +137,7 @@
           <p class="event-address">Near Universal Theatre,<br>Tirupur – 641 601</p>
           <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Harvey+Kumarasamy+Kalyana+Mandapam+near+Universal+Theatre+Tirupur+641601">GET DIRECTIONS ↗</a>
         </article>
+
         <article class="event-card featured">
           <div class="event-number">02</div>
           <p class="event-kicker">SUNDAY · 13 DECEMBER 2026</p>
@@ -114,6 +147,7 @@
           <p class="event-address">Near Universal Theatre,<br>Tirupur – 641 601</p>
           <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Harvey+Kumarasamy+Kalyana+Mandapam+near+Universal+Theatre+Tirupur+641601">GET DIRECTIONS ↗</a>
         </article>
+
         <article class="event-card">
           <div class="event-number">03</div>
           <p class="event-kicker">WEDNESDAY · 16 DECEMBER 2026</p>
@@ -123,15 +157,18 @@
           <p class="event-address">No. 75, Mela Chithra Veethi,<br>Srirangam, Trichy</p>
           <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bharathiya+Poorvika+Sri+Vaishnava+Sabha+75+Mela+Chithra+Veethi+Srirangam+Trichy">GET DIRECTIONS ↗</a>
         </article>
+
       </div>
     </section>
 
+    <!-- Venues -->
     <section class="section venues" id="venues">
       <div class="section-heading">
         <p class="eyebrow">FIND YOUR WAY</p>
         <h2>Venues &amp; Directions</h2>
         <p>We look forward to welcoming you at our celebrations.</p>
       </div>
+
       <div class="venue-row">
         <div class="venue-mark">01</div>
         <div class="venue-copy">
@@ -141,6 +178,7 @@
         </div>
         <a class="map-button" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Harvey+Kumarasamy+Kalyana+Mandapam+near+Universal+Theatre+Tirupur+641601">Open map ↗</a>
       </div>
+
       <div class="venue-row">
         <div class="venue-mark">02</div>
         <div class="venue-copy">
@@ -152,39 +190,64 @@
       </div>
     </section>
 
+    <!-- Our Moments photo gallery -->
     <section class="moments-section" id="moments">
       <div class="section-heading">
         <p class="eyebrow">LITTLE PIECES OF FOREVER</p>
         <h2>Our Moments</h2>
         <p>A few memories we'd love to share with you.</p>
       </div>
+
       <div class="moments-grid">
-       <figure class="moment-placeholder has-photo">
-          <img src="assets/photo1.jpg" alt="Our first memory">
+
+        <figure class="moment-placeholder has-photo">
+          <img
+            src="assets/photo1.jpg"
+            alt="Ramprasath and Swathi sharing a mirror selfie"
+            loading="lazy"
+            decoding="async">
           <figcaption>A beautiful beginning</figcaption>
         </figure>
+
         <figure class="moment-placeholder has-photo">
-          <img src="assets/photo2.jpg" alt="A lovely moment together">
+          <img
+            src="assets/photo2.jpg"
+            alt="A lovely selfie of Ramprasath and Swathi"
+            loading="lazy"
+            decoding="async">
           <figcaption>Little moments, big memories</figcaption>
         </figure>
+
         <figure class="moment-placeholder has-photo">
-          <img src="assets/photo3.jpg" alt="A special moment together">
+          <img
+            src="assets/photo3.jpg"
+            alt="Ramprasath and Swathi together in blue"
+            loading="lazy"
+            decoding="async">
           <figcaption>Our favourite story</figcaption>
         </figure>
+
       </div>
     </section>
+
   </main>
 
+  <!-- Closing -->
   <footer class="closing">
     <div class="ornament">✧　❋　✧</div>
     <p class="eyebrow">WITH LOVE &amp; JOY</p>
     <h2>Awaiting your presence</h2>
-    <p>Your presence will make our celebrations even more special.<br>We look forward to celebrating with you.</p>
+    <p>
+      Your presence will make our celebrations even more special.<br>
+      We look forward to celebrating with you.
+    </p>
+
     <div class="footer-names">Ramprasath <span>&amp;</span> Swathi</div>
     <p class="footer-date">DECEMBER 2026</p>
   </footer>
 
   <button class="music-toggle" id="musicToggle" aria-label="Play wedding music" title="Play or pause wedding music">♫</button>
+
   <script src="script.js"></script>
 </body>
 </html>
