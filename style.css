@@ -729,367 +729,434 @@ body.is-celebrating .petal {
 }
 
 
-/* ==========================================
+
+/* =========================================
    MOBILE WEDDING DESIGN - FINAL ENHANCEMENT
-========================================== */
+========================================= */
 
 @media (max-width: 600px) {
 
-    /* GENERAL TEXT VISIBILITY */
-    .eyebrow {
-        font-size: 13px;
-        letter-spacing: 2px;
-        color: #80513b;
-        font-weight: 600;
-    }
+    /* ---------- OPENING ENVELOPE ---------- */
 
-    /* OPENING SCREEN */
     .envelope-screen {
         background:
-            radial-gradient(ellipse at center,
-                #803334 0%,
-                #641f27 55%,
-                #310d16 100%);
+            radial-gradient(circle at 15% 15%, #9a5550 0%, transparent 28%),
+            radial-gradient(circle at 85% 85%, #7d3439 0%, transparent 30%),
+            radial-gradient(ellipse at center, #782b2b, #55191f 60%, #310d16);
     }
 
     .envelope-screen::after {
-        content: "✿";
+        content: "✧  ❋  ✧";
         position: absolute;
         top: 9%;
-        right: 8%;
-        color: #d4ad72;
-        font-size: 65px;
-        opacity: .24;
-        pointer-events: none;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: #d9b56d;
+        font-size: 27px;
+        letter-spacing: 14px;
+        opacity: .65;
     }
 
-    .envelope-intro::before {
-        content: "❀";
-        position: absolute;
-        left: -12px;
-        top: -100px;
-        color: #e0c18b;
-        font-size: 58px;
-        opacity: .3;
-    }
-
-    .envelope-intro::after {
-        content: "✧     ❋     ✧";
-        display: block;
-        color: #d7b477;
-        font-size: 20px;
-        letter-spacing: 7px;
-        margin-top: 45px;
-        opacity: .7;
+    .envelope-intro h1 {
+        font-size: clamp(52px, 13vw, 70px);
+        margin-bottom: 48px;
+        text-shadow: 0 3px 15px #21080b55;
     }
 
     .tiny-gold {
-        font-size: 14px;
+        font-size: 13px;
+        color: #f0d49c;
         letter-spacing: 3px;
-        line-height: 1.8;
+    }
+
+    .envelope {
+        width: min(400px, 88vw);
+        height: clamp(205px, 58vw, 260px);
+    }
+
+    .wax-seal {
+        width: 88px;
+        height: 88px;
+        font-size: 32px;
     }
 
     .tap-hint {
         font-size: 12px;
-        color: #e4c6a6;
+        color: #e3b9a8;
         letter-spacing: 4px;
     }
 
-    /* MAIN HERO - MORE VISUAL DETAIL */
+
+    /* ---------- MAIN INVITATION ---------- */
+
     .hero {
         min-height: 100svh;
-        padding: 100px 24px 85px;
+        padding: 90px 24px;
         background:
-            radial-gradient(ellipse at 50% 40%,
-                #fffaf0 0%,
-                #f8eddb 65%,
-                #efdfc9 100%);
+            radial-gradient(circle at 10% 15%, #ead7bc 0 2px, transparent 3px),
+            radial-gradient(circle at 88% 25%, #d6b98d 0 2px, transparent 3px),
+            radial-gradient(circle at 15% 78%, #d6b98d 0 2px, transparent 3px),
+            radial-gradient(circle at 90% 85%, #ead7bc 0 2px, transparent 3px),
+            radial-gradient(ellipse at center, #fffaf0, #f3e5d0);
     }
 
-    .hero::before {
-        inset: 14px;
+    .hero:before {
+        inset: 15px;
         border-width: 1.5px;
-        border-color: #bd9460;
+        border-color: #bd9866;
     }
 
-    .hero::after {
-        inset: 21px;
+    .hero:after {
+        inset: 23px;
         border-color: #dfc5a0;
-    }
-
-    .hero-flower {
-        font-size: 105px;
-        opacity: .38;
-    }
-
-    .flower-left {
-        top: 9%;
-        left: -15px;
-    }
-
-    .flower-right {
-        bottom: 7%;
-        right: -15px;
     }
 
     .ornament {
         font-size: 29px;
-        margin-bottom: 32px;
+        color: #a77842;
+        margin-bottom: 35px;
+        letter-spacing: 8px;
+    }
+
+    .eyebrow {
+        font-size: 13px;
+        color: #70412f;
+        letter-spacing: 2px;
+        line-height: 1.9;
     }
 
     .intro {
-        font-size: 26px;
-        color: #60443a;
-        line-height: 1.5;
+        font-size: clamp(24px, 6vw, 29px);
+        color: #563c32;
+        line-height: 1.45;
     }
 
     .hero h1 {
-        font-size: clamp(60px, 12vw, 78px);
-        line-height: 1.08;
-        margin: 35px 0 20px;
+        font-size: clamp(60px, 13vw, 82px);
+        color: #78252b;
+        line-height: 1.05;
+        margin: 36px 0 20px;
+        text-shadow: 0 2px 1px #b58b6b22;
     }
 
     .tagline {
         font-size: 12px;
+        color: #795239;
         letter-spacing: 3px;
-        line-height: 1.8;
+        line-height: 2;
     }
 
     .hero-divider {
-        margin: 38px auto;
+        margin: 35px auto;
         font-size: 32px;
     }
 
     .date-line {
-        font-size: 25px;
-        color: #674437;
+        font-size: 24px;
+        color: #624333;
+        letter-spacing: 1.5px;
         line-height: 1.8;
     }
 
     .date-line b {
-        font-size: 45px;
+        font-size: 46px;
+        color: #78252b;
     }
 
     .place-line {
         font-size: 16px;
         line-height: 1.8;
-        color: #674c3e;
-        max-width: 330px;
+        color: #594235;
+        max-width: 340px;
     }
 
     .scroll-link {
         font-size: 12px;
         font-weight: 600;
-        margin-top: 45px;
+        color: #783a32;
+        letter-spacing: 2px;
+        margin-top: 48px;
+        padding-bottom: 12px;
     }
 
-    /* SCRATCH SECTION DECORATION */
+    .hero-flower {
+        font-size: 105px;
+        color: #a87853;
+        opacity: .30;
+    }
+
+    .flower-left {
+        left: -20px;
+        top: 8%;
+    }
+
+    .flower-right {
+        right: -15px;
+        bottom: 7%;
+    }
+
+
+    /* ---------- SCRATCH CARD ---------- */
+
     .scratch-section {
-        position: relative;
-        padding: 75px 15px;
+        padding: 65px 12px;
         background:
-            radial-gradient(circle at 5% 15%,
-                #dfc39d 0 2px,
-                transparent 3px),
-            radial-gradient(circle at 95% 85%,
-                #dfc39d 0 2px,
-                transparent 3px),
-            linear-gradient(180deg,#f8f0e4,#eee0cd);
-    }
-
-    .scratch-section::before,
-    .scratch-section::after {
-        display: block;
-        color: #b58a64;
-        font-size: 45px;
-        opacity: .5;
-        position: absolute;
-        pointer-events: none;
-    }
-
-    .scratch-section::before {
-        content: "❀";
-        top: 20px;
-        left: 12px;
-    }
-
-    .scratch-section::after {
-        content: "✿";
-        bottom: 20px;
-        right: 12px;
+            radial-gradient(circle at 10% 20%, #d8bb8d 0 2px, transparent 3px),
+            radial-gradient(circle at 90% 80%, #d8bb8d 0 2px, transparent 3px),
+            linear-gradient(180deg, #f8f0e4, #edddc7);
     }
 
     .scratch-tip {
         font-size: 21px;
-        color: #704b3c;
+        color: #694633;
         line-height: 1.6;
-        margin-top: 22px;
+        max-width: 350px;
     }
 
-    /* COUNTDOWN */
+
+    /* ---------- COUNTDOWN ---------- */
+
     .countdown-section {
         padding: 65px 12px;
         background:
-            radial-gradient(ellipse at top,
-                #8b3c3c,
-                #762d30 65%);
-        border-top: 3px double #c9a46c;
-        border-bottom: 3px double #c9a46c;
+            radial-gradient(ellipse at top, #91464a, transparent 75%),
+            #70272e;
     }
 
     .countdown-section .eyebrow {
-        color: #f1d7a9;
+        color: #f1d5a2;
+        font-size: 13px;
+    }
+
+    .countdown {
+        gap: clamp(10px, 3vw, 22px);
+        margin: 30px auto 20px;
+    }
+
+    .countdown div {
+        min-width: 60px;
     }
 
     .countdown strong {
-        font-size: clamp(40px, 10vw, 53px);
-        color: #fff7e9;
+        font-size: clamp(39px, 10vw, 52px);
+        color: #fff4e5;
     }
 
     .countdown span {
         font-size: 11px;
-        color: #f0d5ad;
+        color: #f0d4ae;
+        letter-spacing: 1.5px;
     }
 
-    /* SECTION HEADINGS */
+    .small-note {
+        font-size: 21px;
+        color: #f0d4ae;
+    }
+
+
+    /* ---------- SECTION HEADINGS ---------- */
+
+    .section {
+        padding: 75px 18px;
+    }
+
     .section-heading {
-        position: relative;
-        padding: 0 8px 22px;
+        margin-bottom: 38px;
     }
 
-    .section-heading::after {
-        content: "✧     ❋     ✧";
-        display: block;
-        color: #b58a56;
-        font-size: 20px;
-        letter-spacing: 5px;
-        margin-top: 20px;
-    }
-
-    .section-heading h2 {
-        font-size: 44px;
-        line-height: 1.12;
+    .section-heading h2,
+    .closing h2 {
+        font-size: clamp(40px, 10vw, 50px);
+        line-height: 1.15;
+        color: #76282e;
     }
 
     .section-heading > p:last-child {
         font-size: 17px;
-        line-height: 1.9;
-        color: #644b3e;
+        line-height: 1.8;
+        color: #624b3d;
     }
 
-    /* EVENT CARDS */
+    .section-heading .eyebrow {
+        color: #895a38;
+    }
+
+
+    /* ---------- EVENT CARDS ---------- */
+
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
     .event-card {
-        border: 1px solid #c7a477;
-        border-radius: 3px;
-        padding: 36px 24px;
+        min-height: auto;
+        padding: 35px 24px;
         background:
-            radial-gradient(ellipse at top,
-                #fffdf7,
-                #fff6e9);
-        box-shadow: 0 8px 25px rgba(83,45,30,.10);
+            radial-gradient(circle at top right, #f1e1c9, transparent 55%),
+            #fffaf2;
+        border: 1px solid #c9a477;
+        box-shadow: 0 10px 28px #6a42231a;
     }
 
     .event-card.featured {
+        transform: none;
         background:
-            linear-gradient(145deg,#f4e5d0,#fff8ec);
-        border: 1.5px solid #b98a51;
+            radial-gradient(circle at top right, #e6cda9, transparent 60%),
+            #f2e3d0;
+        border: 1.5px solid #b78a52;
+    }
+
+    .event-number {
+        font-size: 36px;
+        color: #a77a46;
     }
 
     .event-kicker {
         font-size: 12px;
+        color: #79513a;
+        letter-spacing: 1.3px;
         line-height: 1.8;
     }
 
     .event-card h3 {
         font-size: 39px;
+        color: #792b30;
     }
 
     .event-time {
         font-size: 17px;
+        color: #885c31;
     }
 
     .event-venue {
-        font-size: 24px;
-        line-height: 1.45;
-        color: #614234;
+        font-size: 25px;
+        color: #583d31;
+        line-height: 1.4;
     }
 
     .event-address {
         font-size: 16px;
+        color: #644d40;
         line-height: 1.9;
     }
 
     .text-link {
         font-size: 12px;
         font-weight: 600;
+        color: #782e32;
+        margin-top: 20px;
     }
 
-    /* VENUES */
+
+    /* ---------- VENUE DETAILS ---------- */
+
     .venue-row {
-        border-top: 1px solid #cbb18e;
+        flex-wrap: wrap;
+        gap: 14px;
         padding: 30px 5px;
+    }
+
+    .venue-mark {
+        font-size: 35px;
+    }
+
+    .venue-copy {
+        flex: 1 1 calc(100% - 60px);
+    }
+
+    .venue-copy .eyebrow {
+        font-size: 12px;
     }
 
     .venue-copy h3 {
         font-size: 27px;
         line-height: 1.4;
+        color: #792b30;
     }
 
     .venue-copy p:last-child {
         font-size: 16px;
         line-height: 1.8;
+        color: #644d40;
     }
 
     .map-button {
+        margin-left: 48px;
         font-size: 13px;
+        padding: 13px 18px;
+        border-color: #aa7d4b;
     }
 
-    /* GALLERY */
+
+    /* ---------- OUR MOMENTS ---------- */
+
     .moments-section {
+        padding: 75px 18px;
         background:
-            radial-gradient(ellipse at top left,
-                #fff9ef,
-                transparent 55%),
-            radial-gradient(ellipse at bottom right,
-                #e7d2b8,
-                transparent 55%),
-            #f2e4d3;
-        border-top: 1px solid #d0b28b;
-        border-bottom: 1px solid #d0b28b;
+            radial-gradient(circle at 5% 10%, #e2c8a6, transparent 30%),
+            radial-gradient(circle at 95% 90%, #dfc2a0, transparent 30%),
+            #f0e2d0;
+    }
+
+    .moments-section::before,
+    .moments-section::after {
+        font-size: 90px;
+        opacity: .35;
+        color: #a87953;
+    }
+
+    .moments-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        gap: 30px;
     }
 
     .moment-placeholder.has-photo {
         padding: 13px;
-        border: 1.5px solid #c29b6c;
+        background: #fffaf2;
+        border-color: #bd9667;
+    }
+
+    .moment-placeholder.has-photo img {
+        height: min(115vw, 440px);
     }
 
     .moment-placeholder figcaption {
         font-size: 23px;
-        padding: 19px 5px 8px;
+        color: #704b3d;
+        padding: 18px 5px 8px;
     }
 
-    /* CLOSING */
+
+    /* ---------- CLOSING ---------- */
+
     .closing {
+        padding: 75px 22px;
         background:
-            radial-gradient(ellipse at center,
-                #fffaf1,
-                #edddc8);
-        border-top: 2px double #c49a68;
+            radial-gradient(ellipse at center, #fffaf0, #edddc8);
+        border-top: 1px solid #c8a578;
+    }
+
+    .closing .ornament {
+        font-size: 30px;
     }
 
     .closing > p:not(.eyebrow) {
-        font-size: 22px;
+        font-size: 21px;
+        color: #60483b;
         line-height: 1.8;
-        color: #644638;
     }
 
     .footer-names {
         font-size: 55px;
+        color: #78282f;
     }
 
     .footer-date {
         font-size: 12px !important;
-        letter-spacing: 4px;
+        color: #815a39 !important;
     }
 
 }
