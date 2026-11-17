@@ -9,7 +9,7 @@ body.locked{overflow:hidden}
 .envelope-screen::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 25%,rgba(0,0,0,.2) 100%);pointer-events:none}
 .envelope-screen.is-opening{opacity:0;visibility:hidden}
 .envelope-intro{position:relative;z-index:1;text-align:center;width:min(92vw,520px);padding:25px}
-.tiny-gold{font-family:"Cormorant Garamond",serif;font-size:11px;letter-spacing:5px;color:#d8b46f;margin:0 0 8px}
+.tiny-gold{font-family:"Cormorant Garamond",serif;font-size:14px;letter-spacing:10px;color:#d8b46f;margin:0 0 8px}
 .envelope-intro h1{font-family:"Allura","Cormorant Garamond",serif;font-size:clamp(42px,7vw,64px);font-weight:400;color:#fff5eb;margin:0 0 38px}
 .envelope-intro h1 span{color:#d9b56d}
 .envelope{position:relative;display:block;width:min(350px,78vw);height:230px;margin:auto;border:0;border-radius:5px;background:linear-gradient(145deg,#f8ecd6,#e9d7b9);box-shadow:0 18px 38px #17070b70;cursor:pointer;overflow:visible;transition:transform .3s ease}
@@ -31,7 +31,7 @@ body.locked{overflow:hidden}
 .c3{bottom:17px;left:17px;border-width:0 0 2px 2px;border-radius:0 0 0 24px}
 .c4{bottom:17px;right:17px;border-width:0 2px 2px 0;border-radius:0 0 24px}
 .cover-content{text-align:center;position:relative;z-index:2;color:#fff7ef}
-.heart{color:#e3c27b;font-size:21px}
+.heart{color:#e3c27b;font-size:30px}
 .cover-kicker{font-family:"Cormorant Garamond",serif;font-style:italic;color:#e2c17c;font-size:22px;margin:28px 0 12px}
 .cover-content h2{font-family:"Allura","Cormorant Garamond",serif;font-size:clamp(72px,12vw,112px);font-weight:400;line-height:.95;margin:12px 0;color:#fff7ef}
 .ampersand{display:block;font-family:"Allura",cursive;color:#e3c27b;font-size:48px;line-height:1}
@@ -43,13 +43,13 @@ body.locked{overflow:hidden}
 .hero{min-height:94vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 22px 70px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,#fffaf0 0%,#f7eddd 58%,#efe0ca 100%)}
 .hero:before,.hero:after{content:"";position:absolute;inset:22px;border:1px solid #c69b68;pointer-events:none}
 .hero:after{inset:29px;border-color:#dfc6a4}
-.ornament{color:#a97842;letter-spacing:7px;font-size:20px;margin-bottom:24px}
-.eyebrow{font-size:10px;letter-spacing:3px;color:#936247;font-weight:600;line-height:1.8}
-.intro{font-family:"Cormorant Garamond",serif;font-size:clamp(20px,3vw,27px);font-style:italic;margin:4px 0}
-.hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;color:#7e292c;font-size:clamp(54px,10vw,108px);line-height:.95;margin:30px 0 16px}
+.ornament{color:#a97842;letter-spacing:20px;font-size:30px;margin-bottom:24px}
+.eyebrow{font-size:20px;letter-spacing:7px;color:#936247;font-weight:800;line-height:2.8}
+.intro{font-family:"Cormorant Garamond",serif;font-size:clamp(40px,3vw,30px);font-style:italic;margin:4px 0}
+.hero h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:#7e292c;font-size:clamp(54px,10vw,108px);line-height:.95;margin:30px 0 16px}
 .hero h1 span,.footer-names span{font-size:.58em;color:#b1844c;font-style:italic}
-.tagline{font-size:10px;letter-spacing:4px;color:#946347}
-.hero-divider{margin:26px auto;color:#b1844c;font-size:25px}
+.tagline{font-size:30px;letter-spacing:4px;color:#946347}
+.hero-divider{margin:30px auto;color:#b1844c;font-size:35px}
 .date-line{font-family:"Cormorant Garamond",serif;font-size:21px;letter-spacing:2px;margin:0}
 .date-line b{font-size:38px;color:#812e30;margin:0 8px}
 .place-line{font-size:13px;color:#775747;margin-top:8px}
