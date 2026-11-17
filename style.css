@@ -9,7 +9,7 @@ body.locked{overflow:hidden}
 .envelope-screen::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 25%,rgba(0,0,0,.2) 100%);pointer-events:none}
 .envelope-screen.is-opening{opacity:0;visibility:hidden}
 .envelope-intro{position:relative;z-index:1;text-align:center;width:min(92vw,520px);padding:25px}
-.tiny-gold{font-family:"Cormorant Garamond",serif;font-size:14px;letter-spacing:10px;color:#d8b46f;margin:0 0 8px}
+.tiny-gold{font-family:"Cormorant Garamond",serif;font-size:16px;letter-spacing:7px;color:#d8b46f;margin:0 0 8px}
 .envelope-intro h1{font-family:"Allura","Cormorant Garamond",serif;font-size:clamp(42px,7vw,64px);font-weight:400;color:#fff5eb;margin:0 0 38px}
 .envelope-intro h1 span{color:#d9b56d}
 .envelope{position:relative;display:block;width:min(350px,78vw);height:230px;margin:auto;border:0;border-radius:5px;background:linear-gradient(145deg,#f8ecd6,#e9d7b9);box-shadow:0 18px 38px #17070b70;cursor:pointer;overflow:visible;transition:transform .3s ease}
@@ -46,15 +46,15 @@ body.locked{overflow:hidden}
 .ornament{color:#a97842;letter-spacing:20px;font-size:30px;margin-bottom:24px}
 .eyebrow{font-size:20px;letter-spacing:7px;color:#936247;font-weight:800;line-height:2.8}
 .intro{font-family:"Cormorant Garamond",serif;font-size:clamp(40px,3vw,30px);font-style:italic;margin:4px 0}
-.hero h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:#7e292c;font-size:clamp(54px,10vw,108px);line-height:.95;margin:30px 0 16px}
-.hero h1 span,.footer-names span{font-size:.58em;color:#b1844c;font-style:italic}
+.hero h1{font-family:"Cormorant Garamond",serif;font-weight:800;color:#7e292c;font-size:clamp(54px,10vw,108px);line-height:.95;margin:30px 0 16px}
+.hero h1 span,.footer-names span{font-size:.65em;color:#b1844c;font-style:italic}
 .tagline{font-size:30px;letter-spacing:4px;color:#946347}
 .hero-divider{margin:30px auto;color:#b1844c;font-size:35px}
 .date-line{font-family:"Cormorant Garamond",serif;font-size:21px;letter-spacing:2px;margin:0}
 .date-line b{font-size:38px;color:#812e30;margin:0 8px}
 .place-line{font-size:13px;color:#775747;margin-top:8px}
-.scroll-link{margin-top:50px;text-decoration:none;font-size:9px;letter-spacing:2px;color:#8b4a3c;border-bottom:1px solid #c59a68;padding-bottom:8px}
-.scroll-link span{font-size:16px;margin-left:8px}
+.scroll-link{margin-top:50px;text-decoration:none;font-size:15px;letter-spacing:2px;color:#8b4a3c;border-bottom:1px solid #c59a68;padding-bottom:8px}
+.scroll-link span{font-size:20px;margin-left:8px}
 .hero-flower{position:absolute;color:#b98565;opacity:.35;font-size:120px}
 .flower-left{left:-10px;top:14%}.flower-right{right:-5px;bottom:12%}
 /* Scratch reveal: supplied floral/jasmine background artwork */
@@ -79,8 +79,8 @@ body.locked{overflow:hidden}
   background:radial-gradient(circle at 50% 20%,#fff7e5,#e8d0a8);
   color:#812f36;
 }
-.scratch-reveal span{font-size:clamp(7px,1.7vw,10px);letter-spacing:2px}
-.scratch-reveal strong{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,12vw,76px);line-height:.95}
+.scratch-reveal span{font-size:clamp(15px,1.7vw,14px);letter-spacing:2px}
+.scratch-reveal strong{font-family:"Cormorant Garamond",serif;font-size:clamp(55px,12vw,76px);line-height:.95}
 .scratch-reveal sup{font-size:.3em}
 .scratch-reveal b{font-size:clamp(9px,2.2vw,13px);letter-spacing:2px}
 .scratch-reveal small{font-family:"Cormorant Garamond",serif;font-size:clamp(11px,3vw,16px);margin-top:7px}
