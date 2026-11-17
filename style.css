@@ -1160,3 +1160,176 @@ body.is-celebrating .petal {
     }
 
 }
+
+
+/* ==========================================
+   MOBILE PORTRAIT - MAIN INVITATION REDESIGN
+   Keep desktop layout unchanged
+========================================== */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+    .hero {
+        min-height: 100svh;
+        height: auto;
+        box-sizing: border-box;
+        padding: 75px 25px 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* More intentional decorative background */
+    .hero {
+        background:
+            radial-gradient(circle at 12% 12%, #d9b98d 0 2px, transparent 3px),
+            radial-gradient(circle at 87% 18%, #d9b98d 0 2px, transparent 3px),
+            radial-gradient(circle at 10% 83%, #d9b98d 0 2px, transparent 3px),
+            radial-gradient(circle at 90% 88%, #d9b98d 0 2px, transparent 3px),
+            radial-gradient(ellipse at center, #fffaf0, #f2e3ce);
+    }
+
+    /* Decorative double border */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 13px;
+        border: 1px solid #bd9866;
+        pointer-events: none;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 20px;
+        border: 1px solid #dfc5a0;
+        pointer-events: none;
+    }
+
+    .ornament {
+        font-size: 27px;
+        margin: 0 0 30px;
+        letter-spacing: 7px;
+    }
+
+    .hero .eyebrow {
+        font-size: 12px;
+        line-height: 1.9;
+        letter-spacing: 2px;
+        max-width: 310px;
+        margin: 0 auto 24px;
+    }
+
+    .hero .intro {
+        font-size: clamp(23px, 6vw, 27px);
+        line-height: 1.5;
+        margin: 2px auto;
+        max-width: 340px;
+    }
+
+    .hero h1 {
+        font-size: clamp(51px, 12.5vw, 70px);
+        line-height: 1.12;
+        margin: 32px 0 15px;
+        max-width: 100%;
+    }
+
+    .hero .tagline {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+        line-height: 1.8;
+        margin: 0;
+    }
+
+    .hero-divider {
+        margin: 32px auto 28px;
+        font-size: 29px;
+    }
+
+    .hero .date-line {
+        font-size: 19px;
+        line-height: 1.8;
+        margin: 0;
+        letter-spacing: 1px;
+    }
+
+    .hero .date-line b {
+        font-size: 38px;
+        margin: 0 4px;
+    }
+
+    .hero .place-line {
+        font-size: 15px;
+        line-height: 1.8;
+        max-width: 300px;
+        margin: 8px auto 0;
+    }
+
+    .hero .scroll-link {
+        font-size: 11px;
+        margin-top: 36px;
+        letter-spacing: 1.5px;
+        line-height: 2;
+    }
+
+    /* Larger, softer floral decorations */
+    .hero-flower {
+        position: absolute;
+        font-size: 85px;
+        opacity: .28;
+        color: #a87853;
+        pointer-events: none;
+    }
+
+    .hero-flower.flower-left {
+        top: 9%;
+        left: -23px;
+    }
+
+    .hero-flower.flower-right {
+        bottom: 8%;
+        right: -20px;
+    }
+
+    /* Small ornamental details */
+    .hero .hero-divider::before,
+    .hero .hero-divider::after {
+        color: #bd9259;
+    }
+}
+
+
+/* ==========================================
+   VERY NARROW PHONES
+========================================== */
+
+@media screen and (max-width: 380px) and (orientation: portrait) {
+
+    .hero {
+        padding: 65px 22px 75px;
+    }
+
+    .hero h1 {
+        font-size: 49px;
+    }
+
+    .hero .intro {
+        font-size: 22px;
+    }
+
+    .hero .date-line {
+        font-size: 17px;
+    }
+
+    .hero .date-line b {
+        font-size: 34px;
+    }
+
+    .hero .place-line {
+        font-size: 14px;
+    }
+}
