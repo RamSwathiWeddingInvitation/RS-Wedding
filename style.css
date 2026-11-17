@@ -422,3 +422,309 @@ body.is-celebrating .petal {
         display: none;
     }
 }
+
+
+/* ========================================
+   MOBILE WEDDING INVITATION ENHANCEMENTS
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* OPENING ENVELOPE */
+    .envelope-intro {
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .tiny-gold {
+        font-size: 13px;
+        letter-spacing: 3px;
+        line-height: 1.7;
+    }
+
+    .envelope-intro h1 {
+        font-size: clamp(48px, 12vw, 66px);
+        line-height: 1.05;
+        margin-bottom: 42px;
+    }
+
+    .envelope {
+        width: min(390px, 86vw);
+        height: clamp(190px, 55vw, 250px);
+    }
+
+    .wax-seal {
+        width: 84px;
+        height: 84px;
+        font-size: 30px;
+    }
+
+    .tap-hint {
+        font-size: 11px;
+        letter-spacing: 4px;
+        margin-top: 35px;
+    }
+
+    /* MAIN INVITATION */
+    .hero {
+        min-height: 100svh;
+        padding: 100px 25px 90px;
+        justify-content: center;
+    }
+
+    .ornament {
+        font-size: 25px;
+        margin-bottom: 28px;
+    }
+
+    .eyebrow {
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 1.9;
+    }
+
+    .intro {
+        font-size: clamp(23px, 5.5vw, 28px);
+        line-height: 1.4;
+        margin: 5px 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(58px, 12vw, 78px);
+        line-height: 1.05;
+        margin: 32px 0 20px;
+    }
+
+    .tagline {
+        font-size: 11px;
+        letter-spacing: 3px;
+        line-height: 1.8;
+    }
+
+    .hero-divider {
+        margin: 32px auto;
+        font-size: 30px;
+    }
+
+    .date-line {
+        font-size: 23px;
+        line-height: 1.7;
+    }
+
+    .date-line b {
+        font-size: 42px;
+    }
+
+    .place-line {
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 340px;
+    }
+
+    .scroll-link {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-top: 42px;
+    }
+
+    .hero-flower {
+        font-size: 95px;
+    }
+
+    /* SCRATCH CARD */
+    .scratch-section {
+        padding: 55px 12px 60px;
+    }
+
+    .scratch-art {
+        width: min(550px, calc(100vw - 24px));
+    }
+
+    .scratch-reveal span {
+        font-size: 11px;
+    }
+
+    .scratch-reveal strong {
+        font-size: clamp(55px, 15vw, 78px);
+    }
+
+    .scratch-reveal b {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .scratch-reveal small {
+        font-size: 16px;
+    }
+
+    .scratch-tip {
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 0 12px;
+    }
+
+    /* COUNTDOWN */
+    .countdown-section {
+        padding: 55px 12px;
+    }
+
+    .countdown {
+        gap: clamp(12px, 4vw, 25px);
+    }
+
+    .countdown div {
+        min-width: 58px;
+    }
+
+    .countdown strong {
+        font-size: clamp(38px, 9vw, 50px);
+    }
+
+    .countdown span {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .small-note {
+        font-size: 19px;
+    }
+
+    /* EVENT AND VENUE DETAILS */
+    .section {
+        padding: 65px 18px;
+    }
+
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .section-heading h2,
+    .closing h2 {
+        font-size: clamp(38px, 9vw, 48px);
+    }
+
+    .section-heading > p:last-child {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .event-card {
+        padding: 32px 22px;
+        min-height: auto;
+    }
+
+    .event-card.featured {
+        transform: none;
+    }
+
+    .event-number {
+        font-size: 32px;
+    }
+
+    .event-kicker {
+        font-size: 11px;
+        line-height: 1.7;
+        letter-spacing: 1.3px;
+    }
+
+    .event-card h3 {
+        font-size: 36px;
+    }
+
+    .event-time {
+        font-size: 16px;
+    }
+
+    .event-venue {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .event-address {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .text-link {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+    .venue-row {
+        flex-wrap: wrap;
+        gap: 14px;
+        padding: 25px 4px;
+    }
+
+    .venue-mark {
+        font-size: 32px;
+    }
+
+    .venue-copy {
+        flex-basis: calc(100% - 55px);
+    }
+
+    .venue-copy h3 {
+        font-size: 25px;
+        line-height: 1.35;
+    }
+
+    .venue-copy p:last-child {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .map-button {
+        margin-left: 46px;
+        font-size: 12px;
+        padding: 12px 17px;
+    }
+
+    /* PHOTO GALLERY */
+    .moments-section {
+        padding: 65px 18px;
+    }
+
+    .moments-grid {
+        gap: 24px;
+    }
+
+    .moment-placeholder.has-photo img {
+        height: min(115vw, 440px);
+    }
+
+    .moment-placeholder figcaption {
+        font-size: 22px;
+    }
+
+    /* CLOSING */
+    .closing {
+        padding: 65px 20px;
+    }
+
+    .closing > p:not(.eyebrow) {
+        font-size: 21px;
+        line-height: 1.7;
+    }
+
+    .footer-names {
+        font-size: 50px;
+    }
+
+    .footer-date {
+        font-size: 11px !important;
+    }
+
+    .music-toggle {
+        width: 52px;
+        height: 52px;
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
